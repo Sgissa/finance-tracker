@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body { 
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+  font-family: sans-serif;
+}
+
+   
+h1 {
+    color: #333;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .h2 {
+    text-align: center;
+  }
+
+
+ .navbar {
+  height: 50px;
+  width: 100%;
+  background-color: #A0D0F5;
+  font-size: 20px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.expense-display {
+  margin-top: 50px;
+}
+
+
+.input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input-section input[type="number"], .input-section input[type="date"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.input-section button {
+  padding: 5px 10px;
+  background-color: #A0D0F5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expenses-list {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #A0D0F5;
+  color: white;
+}
+
+tfoot td {
+  font-weight: bold;
+}

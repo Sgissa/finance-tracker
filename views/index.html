@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">Home</a>
+      <a href="/log.html">Logs</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <section id="Hero section">
+      <h1>MyTracker</h1>
+    </section>
+    <section>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+    </section>
+    <section class="expense-display">
+      <div class="expense-list">
+        <h2>Expense List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody id="expenses-table-body"></tbody>
+          <tfoot>
+            <tr>
+              <td>Total:</td>
+              <td id="total-amount"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./chart.js"></script>
+</html>
