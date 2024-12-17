@@ -10,7 +10,7 @@ async function chartLogs() {
     if (!labels[log.category]) {
       labels[log.category] = 0;
     }
-    labels[log.category] += log.amount;
+    labels[log.category] += Number(log.amount);
   });
 
   new Chart(ctx, {

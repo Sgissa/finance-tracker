@@ -15,8 +15,8 @@ async function showLogs() {
 }
 
 async function addLog() {
-  const newLog = document.querySelector("#myExpense");
-  const newLogCategory = document.querySelector("#myExpenseCategory");
+  const newLog = document.querySelector("#amount-input");
+  const newLogCategory = document.querySelector("#category-select");
 
   const logData = await fetch(`/api/logs/new`, {
     method: "POST",
@@ -33,3 +33,7 @@ async function addLog() {
 
   showLogs();
 }
+
+async function removeLog() {}
+
+showLogs();
