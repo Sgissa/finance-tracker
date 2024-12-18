@@ -96,3 +96,32 @@ th {
 tfoot td {
   font-weight: bold;
 }
+
+
+.formHolder {
+  width: 30%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+label {
+  font-size: 30px;
+}
+
+input {
+  height: 50px;
+  width: 450px;
+  font-size: 20px;
+
+}
+
+.subBtn {
+  width: 80px;
+  height: 30px;
+  background-color: #A0D0F5;
+  border: none;
+  margin: 0 auto;
+  margin-top: 20px;
+}
