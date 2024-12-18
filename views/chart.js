@@ -27,11 +27,4 @@ async function chartLogs() {
   });
 }
 
-// const logs = [
-//   { amount: 5, category: "Food" },
-//   { amount: 3, category: "Food" },
-//   { amount: 12, category: "Gas" },
-//   { amount: 5, category: "Food" },
-// ];
-
 chartLogs();

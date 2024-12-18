@@ -25,6 +25,8 @@ app.post("/api/logs/new", function (req, res) {
   });
 });
 
+app.delete("/api/log/remove", function (req, res) {});
+
 const port = process.env.PORT || 3000;
 app.listen(port);
 

@@ -34,6 +34,25 @@ async function addLog() {
   showLogs();
 }
 
-async function removeLog() {}
-
 showLogs();
+
+async function removeLog() {
+  const ulList = document.querySelector("#allLogs");
+  ulList.innerHTML = "";
+
+  const logData = await fetch(`/api/logs`);
+  const { logs } = await logData.json();
+
+  for (let i = 0; i < data.length; i++) {
+    ulRef.innerHTML += `<li>${logs[i]}
+    <button onclick="deleteData(${i})">X</button></li>`;
+  }
+}
+
+function deleteLog(index) {
+  data.splice(index, 1);
+
+  removeLog();
+}
+
+removeLog();
