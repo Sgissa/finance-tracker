@@ -13,10 +13,10 @@ async function showLogs() {
     showAllLogs.innerHTML += `<li>$${log.amount} - ${log.category}</li>`;
   });
 
-  for (let i = 0; i < data.length; i++) {
-    showAllLogs.innerHTML += `<li>${logs[i]}
-    <button onclick="deleteLog(${i})">X</button></li>`;
-  }
+  // for (let i = 0; i < data.length; i++) {
+  //   showAllLogs.innerHTML += `<li>${logs[i]}
+  //   <button onclick="deleteLog(${i})">X</button></li>`;
+  // }
 }
 
 async function addLog() {
@@ -54,10 +54,10 @@ showLogs();
 //   }
 // }
 
-function deleteLog(index) {
-  data.splice(index, 1);
+// function deleteLog(index) {
+//   data.splice(index, 1);
 
-  showLogs();
-}
+//   showLogs();
+// }
 
-showLogs();
+// showLogs();
